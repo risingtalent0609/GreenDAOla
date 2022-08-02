@@ -11,6 +11,7 @@ describe("The whole test started!",async function () {
     token = await token_deploy.deploy("GreenDAOla", "GD", 6, 5000000000000000, 500000000000000);
     await token.deployed();
 
+    
     await token.transfer(user1.address, 1000000000);
     await token.transfer(user2.address, 1000000000);
   });
